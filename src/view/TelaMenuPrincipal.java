@@ -9,6 +9,7 @@ import controller.ControllerCadHospede;
 import controller.ControllerCadFuncionario;
 import controller.ControllerCadFornecedor;
 import controller.ControllerCadProduto;
+import controller.ControllerCadServico;
 
 /**
  *
@@ -240,7 +241,9 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemModeloActionPerformed
 
     private void jMenuItemServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemServicoActionPerformed
-        // TODO add your handling code here:
+        TelaCadastroServico telaCadastroServico = new TelaCadastroServico(null,true);
+        ControllerCadServico controllerCadServico = new ControllerCadServico(telaCadastroServico);
+        telaCadastroServico.setVisible(true);
     }//GEN-LAST:event_jMenuItemServicoActionPerformed
 
     private void jMenuItemEstacionamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEstacionamentoActionPerformed
