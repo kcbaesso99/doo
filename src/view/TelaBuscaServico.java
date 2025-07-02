@@ -12,12 +12,12 @@ import javax.swing.JPanel;
  *
  * @author house
  */
-public class TelaFiltro extends javax.swing.JDialog {
+public class TelaBuscaServico extends javax.swing.JDialog {
 
     /**
      * Creates new form TemplateCadastros2025
      */
-    public TelaFiltro(java.awt.Frame parent, boolean modal) {
+    public TelaBuscaServico(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -69,7 +69,7 @@ public class TelaFiltro extends javax.swing.JDialog {
         jButtonSair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Cadastro de Hóspedes");
+        setTitle("Sistema de Gestão Hoteleiro");
         setResizable(false);
 
         jPanelTitulo.setBackground(new java.awt.Color(153, 153, 255));
@@ -97,10 +97,16 @@ public class TelaFiltro extends javax.swing.JDialog {
 
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Nome", "CPF", "Status"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(50);
+            jTable1.getColumnModel().getColumn(1).setMaxWidth(450);
+            jTable1.getColumnModel().getColumn(2).setMaxWidth(150);
+            jTable1.getColumnModel().getColumn(3).setMaxWidth(100);
+        }
 
         javax.swing.GroupLayout jPanelDadosLayout = new javax.swing.GroupLayout(jPanelDados);
         jPanelDados.setLayout(jPanelDadosLayout);
@@ -126,7 +132,7 @@ public class TelaFiltro extends javax.swing.JDialog {
             }
         });
 
-        jComboBoxFiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxFiltro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Nome", "Descrição", "Status", "Data de Cadastro" }));
         jComboBoxFiltro.setSelectedIndex(-1);
 
         jButtonBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Find.png"))); // NOI18N
@@ -244,7 +250,7 @@ public class TelaFiltro extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TelaFiltro dialog = new TelaFiltro(new javax.swing.JFrame(), true);
+                TelaBuscaServico dialog = new TelaBuscaServico(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
