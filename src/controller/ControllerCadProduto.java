@@ -2,6 +2,7 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import view.TelaBuscaCadastroProduto;
 import view.TelaCadastroProduto;
 
 
@@ -33,6 +34,9 @@ public class ControllerCadProduto implements ActionListener {
             utilities.Utilities.ativaDesativa(this.telaCadastroProduto.getjPanelBotoes(), true);
             utilities.Utilities.limpaComponentes(this.telaCadastroProduto.getjPanelDados(), false);
         } else if (evento.getSource() == this.telaCadastroProduto.getjButtonBuscar()) {
+            TelaBuscaCadastroProduto telaBuscaCadastroProduto = new TelaBuscaCadastroProduto(null, true);
+            ControllerBuscaProduto controllerBuscaProduto = new ControllerBuscaProduto(telaBuscaCadastroProduto);
+            telaBuscaCadastroProduto.setVisible(true);
         } else if (evento.getSource() == this.telaCadastroProduto.getjButtonSair()) {
             this.telaCadastroProduto.dispose();
        }

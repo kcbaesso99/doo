@@ -6,7 +6,11 @@
 package view;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -138,6 +142,11 @@ public class TelaBuscaHospede extends javax.swing.JDialog {
         jButtonBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Find.png"))); // NOI18N
         jButtonBuscar.setText("Filtro");
         jButtonBuscar.setActionCommand("0");
+        jButtonBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBuscarActionPerformed(evt);
+            }
+        });
 
         jLabelValor.setText("Valor");
 
@@ -220,6 +229,56 @@ public class TelaBuscaHospede extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCarregarActionPerformed
 
+    private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBuscarActionPerformed
+
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public JButton getjButtonCarregar() {
+        return jButtonCarregar;
+    }
+
+    public JComboBox<String> getjComboBoxFiltro() {
+        return jComboBoxFiltro;
+    }
+
+    public JLabel getjLabelFiltrarPor() {
+        return jLabelFiltrarPor;
+    }
+
+    public JLabel getjLabelTitulo() {
+        return jLabelTitulo;
+    }
+
+    public JLabel getjLabelValor() {
+        return jLabelValor;
+    }
+
+    public JPanel getjPanelFiltro() {
+        return jPanelFiltro;
+    }
+
+    public JPanel getjPanelTitulo() {
+        return jPanelTitulo;
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public JTextField getjTextFieldValor() {
+        return jTextFieldValor;
+    }
+
+    public void setjTextFieldValor(JTextField jTextFieldValor) {
+        this.jTextFieldValor = jTextFieldValor;
+    }
+
+    
+    
     /**
      * @param args the command line arguments
      */

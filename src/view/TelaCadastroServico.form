@@ -29,7 +29,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jPanelTitulo" max="32767" attributes="0"/>
-                  <Component id="jPanelBotoes" alignment="0" pref="606" max="32767" attributes="0"/>
+                  <Component id="jPanelBotoes" alignment="0" pref="637" max="32767" attributes="0"/>
                   <Component id="jPanelDados" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -107,7 +107,7 @@
                               <Component id="jTextFieldId" min="-2" pref="35" max="-2" attributes="0"/>
                               <Component id="jLabelId" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="362" max="32767" attributes="0"/>
+                          <EmptySpace pref="393" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jFormattedTextFieldDataCadastro" min="-2" pref="181" max="-2" attributes="0"/>
                               <Component id="jLabelCadastro" min="-2" max="-2" attributes="0"/>

@@ -7,6 +7,8 @@ package view;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -36,6 +38,26 @@ public class TelaBuscaServico extends javax.swing.JDialog {
     
     public JPanel getjPanelDados() {
         return jPanelDados;
+    }
+
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public JButton getjButtonCarregar() {
+        return jButtonCarregar;
+    }
+
+    public JTextField getjTextFieldValor() {
+        return jTextFieldValor;
+    }
+
+    public void setjTextFieldValor(JTextField jTextFieldValor) {
+        this.jTextFieldValor = jTextFieldValor;
     }
     
     
